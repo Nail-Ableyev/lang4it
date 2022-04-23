@@ -1,0 +1,29 @@
+{
+  "0": {
+    "id": "family",
+    "size": 1,
+    "title": "Family"
+  },
+  "1":{
+    "id": "symbols",
+    "size": 2,
+    "title": "$ymbols & sign$",
+    "tag": "upd"
+  },
+  "2":{
+    "id": "colors",
+    "size": 1,
+    "title": "Colors"
+  },
+  "3":{
+    "id": "layout",
+    "size": 3,
+    "title": "Layout"
+  },
+  "4":{
+    "id": "grid",
+    "size": 1,
+    "title": "Grid",
+    "tag": "new"
+  }
+}
