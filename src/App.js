@@ -11,43 +11,37 @@ function App() {
     const mainScreenList =
         [
             {
-                id: "family",
-                size: 1,
-                title: "Family",
-                type: "custom"
-            },
-            {
                 id: "symbols",
                 size: 2,
                 title: "$ymbols & sign$",
-                tag: "upd",
+                tag: "new",
                 type: "wordWordFlip"
             },
-            {
-                id: "colors",
-                size: 1,
-                title: "Colors",
-                type: "colors"
-            },
-            {
-                id: "layout",
-                size: 3,
-                title: "Layout",
-                type: "wordPicFlip"
-            },
-            {
-                id: "grid",
-                size: 1,
-                title: "Grid",
-                type: "wordPicFlip"
-            },
-            {
-                id: "spacing",
-                size: 3,
-                title: "Spacing",
-                tag: "new",
-                type: "wordPicFlip"
-            }
+            // {
+            //     id: "colors",
+            //     size: 1,
+            //     title: "Colors",
+            //     type: "colors"
+            // },
+            // {
+            //     id: "layout",
+            //     size: 3,
+            //     title: "Layout",
+            //     type: "wordPicFlip"
+            // },
+            // {
+            //     id: "grid",
+            //     size: 1,
+            //     title: "Grid",
+            //     type: "wordPicFlip"
+            // },
+            // {
+            //     id: "spacing",
+            //     size: 3,
+            //     title: "Spacing",
+            //     tag: "new",
+            //     type: "wordPicFlip"
+            // }
 
         ]
 

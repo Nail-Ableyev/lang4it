@@ -56,35 +56,87 @@
   "symbols":[
     [
       "&",
-      "Ampersand"
+      "ampersand"
     ],
     [
       "*",
-      "Asterisc"
+      "asterisc"
     ],
     [
       ",",
-      "Comma"
+      "comma"
     ],
     [
       "x-x",
-      "hyphen"
+      "dash"
     ],
     [
       "x_x",
-      "Underscore"
+      "underscore"
     ],
     [
       ":",
-      "Colon"
+      "colon"
     ],
     [
       ";",
-      "Semi-colon"
+      "semi-colon"
     ],
     [
       "@",
       "at"
+    ],
+    [
+      "#",
+      "hash"
+    ],
+    [
+      "$",
+      "dollar sign"
+    ],
+    [
+      "=",
+      "equal"
+    ],
+    [
+      "/",
+      "slash"
+    ],
+    [
+      "|",
+      "pipe"
+    ],
+    [
+      "?",
+      "question mark"
+    ],
+    [
+      "%",
+      "percent"
+    ],
+    [
+      "<>",
+      "angle brackets"
+    ],
+    [
+      "()",
+      "parentheses"
+    ],
+    [
+      "{}",
+      "curly braces"
+    ],
+    [
+      "[]",
+      "square brackets"
+    ],
+    [
+      ".",
+      "dot / point"
+    ],
+    [
+      "'X'",
+      "quotes"
     ]
   ]
 }
