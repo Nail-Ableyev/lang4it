@@ -9,7 +9,7 @@ function Header(){
             <header>
                 <span>|</span>
                 <Link to={"/"}>
-                    <h1>L4IT</h1>
+                    <h1>L<span>4</span>iT</h1>
                 </Link>
                 <span>|</span>
                 <span>{currentPage}</span>
