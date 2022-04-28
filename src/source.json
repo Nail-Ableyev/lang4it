@@ -138,5 +138,31 @@
       "'X'",
       "quotes"
     ]
+  ],
+  "instructions": [
+    "add",
+    "attach",
+    "close",
+    "copy",
+    "crop",
+    "delete",
+    "decrease",
+    "download",
+    "enter",
+    "go (to)",
+    "go back (to)",
+    "hover",
+    "increase",
+    "lock",
+    "open",
+    "paste",
+    "press",
+    "skip",
+    "cancel",
+    "swap",
+    "unlock",
+    "upload",
+    "zoom-in",
+    "zoom-out"
   ]
 }

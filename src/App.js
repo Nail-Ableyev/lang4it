@@ -14,9 +14,15 @@ function App() {
                 id: "symbols",
                 size: 2,
                 title: "$ymbols & sign$",
-                tag: "new",
                 type: "wordWordFlip"
             },
+            {
+              id: "instructions",
+              size: 3,
+              title: "Instructions",
+              tag: "new",
+              type: "wordPicFlip"
+          },
             // {
             //     id: "colors",
             //     size: 1,
