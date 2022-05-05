@@ -20,7 +20,6 @@ function App() {
               id: "instructions",
               size: 3,
               title: "Instructions",
-              tag: "new",
               type: "wordPicFlip"
           },
             // {
@@ -43,8 +42,8 @@ function App() {
             // },
             {
                 id: "loginPass",
-                size: 3,
-                title: "Login",
+                size: 1,
+                title: "Login & Password",
                 tag: "new",
                 type: "LoginPass"
             }
