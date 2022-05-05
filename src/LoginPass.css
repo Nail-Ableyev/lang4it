@@ -1,0 +1,127 @@
+:root{
+	--b:3px;   /* thickness of the border */
+	--c:white;   /* color of the border */
+	--w:20px;  /* width of border */
+}
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+/* body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-image: url('back.jpg');
+	color:white
+
+} */
+
+.containerPass{
+	height: 100vh;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-image: url("./img/back.jpg");
+	color:white
+}
+.mainPass {
+
+    background-repeat: repeat;
+  
+	border:var(--b) solid transparent; /* space for the border */
+	--g:#0000 90deg,var(--c) 0;
+	background:
+	  conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+	  conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+	  conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+	  conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+	background-size:var(--w) var(--w);
+	background-origin:border-box;
+	background-repeat:no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+    background-color: initial;
+	border: 2px solid white;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 22px;
+	color: white;
+	font-size: 1.2rem
+}
+
+input::placeholder{
+	color: white;
+}
+
+.buttonPass {
+    border-radius: 20px;
+	border: 2px solid white;
+	background-color: initial;
+	color:white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    cursor: pointer;
+	transition: transform 80ms ease-in;
+}
+
+.buttonPass:active {
+	transform: scale(0.95);
+	background: lightgrey;
+}
+
+.buttonPass:focus {
+	outline: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.aPass {
+    display: block;
+	color: white;
+    text-decoration: none;
+    border-radius: 20px;
+	border: 2px solid white;
+	background-color: initial;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    cursor: pointer;
+	transition: transform 80ms ease-in;
+}
+
+#openlock {
+	display: none;
+}

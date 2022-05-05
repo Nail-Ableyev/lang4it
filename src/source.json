@@ -164,5 +164,6 @@
     "upload",
     "zoom-in",
     "zoom-out"
-  ]
+  ],
+  "loginPass": true
 }

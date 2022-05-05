@@ -41,13 +41,13 @@ function App() {
             //     title: "Grid",
             //     type: "wordPicFlip"
             // },
-            // {
-            //     id: "spacing",
-            //     size: 3,
-            //     title: "Spacing",
-            //     tag: "new",
-            //     type: "wordPicFlip"
-            // }
+            {
+                id: "loginPass",
+                size: 3,
+                title: "Login",
+                tag: "new",
+                type: "LoginPass"
+            }
 
         ]
 

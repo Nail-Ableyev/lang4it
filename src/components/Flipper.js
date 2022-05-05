@@ -5,6 +5,7 @@ import {Context} from "../Context"
 import PictureWordFlipper from "./PictureWordFlipper";
 import Colors from "./Colors";
 import WordWordFlipper from "./WordWordFlipper";
+import LoginPass from "./LoginPass";
 
 function Flipper({type, id}){
 
@@ -19,6 +20,9 @@ function Flipper({type, id}){
         }
         else if(type==="wordWordFlip"){
             return (<WordWordFlipper target={id}/>)
+        }
+        else if(type==="LoginPass"){
+            return(<LoginPass/>)
         }
     }
 
