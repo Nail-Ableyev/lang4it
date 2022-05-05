@@ -33,11 +33,9 @@ function LoginPass (){
         if (loginActual === loginEntered && passActual === passEntered){
             setSolved(true)
             setColor("green")
-            alert("Correct")
             correct.play()
         }
         else {
-            alert("sorry")
             setColor("red")
             wrong.play()
 
