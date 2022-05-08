@@ -6,6 +6,9 @@
     url("./fonts/nunito-v9-latin-regular.woff2")
     format("woff2")
 }
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     padding: 0;

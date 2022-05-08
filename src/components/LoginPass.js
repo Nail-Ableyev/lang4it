@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import "../LoginPass.css"
 import { ReactComponent as Lock } from '../img/lock.svg'
+import { ReactComponent as Sound } from '../img/volume.svg'
 import correctSound from "../sounds/access_granted.ogg"
 import wrongSound from "../sounds/access_denied.ogg"
 function LoginPass (){
@@ -8,17 +9,12 @@ function LoginPass (){
     const correct = new Audio(correctSound);
     const wrong = new Audio(wrongSound);
 
-
-    const color = getComputedStyle(document.documentElement).getPropertyValue('--c');
-
     function setColor (newColor){
         document.documentElement.style.setProperty('--c', newColor);
     }
 
-    const [loginActual, setLoginActual] = useState("login");
-    const [passActual, setPassActual] = useState("pass");
-
-
+    const [loginActual, setLoginActual] = useState("");
+    const [passActual, setPassActual] = useState("");
 
     const [loginEntered, setLoginEntered] = useState("");
     const [passEntered, setPassEntered] = useState("");
@@ -60,10 +56,10 @@ function LoginPass (){
     }
 
     function playSound(line){
-        const spaced = line.split('').join(' ');
+        const spaced = line.split('').join('!').toLowerCase();
         let utterance = new SpeechSynthesisUtterance(spaced);
         utterance.lang = 'en-US'
-        utterance.rate = 0.8
+        utterance.rate = 0.5
         speechSynthesis.speak(utterance);
     }
 
@@ -79,27 +75,28 @@ function LoginPass (){
                 <Lock/>
                 <form>
                     <h1>Level {level}</h1>
-                    <input 
-                        type="text" 
-                        placeholder="Login"
-                        id="login"
-                        value={loginEntered}
-                        onChange={(e) => setLoginEntered(e.target.value)}
-                        autoFocus
-                    />
-                    
-                    <input 
-                        type="password" 
-                        placeholder="Password"
-                        id="pass"
-                        value={passEntered}
-                        onChange={(e) => setPassEntered(e.target.value)}
-                    />
+                    <div className="for-input">
+                        <input 
+                            type="text" 
+                            placeholder="Login"
+                            id="login"
+                            value={loginEntered}
+                            onChange={(e) => setLoginEntered(e.target.value)}
+                            autoFocus
+                        />
+                        <button type="button" className="buttonPass buttonRound" onClick={()=>playSound(loginActual)}><Sound/></button>
+
+                        <input 
+                            type="password" 
+                            placeholder="Password"
+                            id="pass"
+                            value={passEntered}
+                            onChange={(e) => setPassEntered(e.target.value)}
+                        />
+
+                        <button type="button" className="buttonPass buttonRound" onClick={()=>playSound(passActual)}><Sound/></button>
+                    </div>
                 </form>
-
-                <button className="buttonPass" onClick={()=>playSound(loginActual)}>Say Login</button>
-                <button className="buttonPass" onClick={()=>playSound(passActual)}>Say Password</button>
-
 
                 <button 
                     className="buttonPass "
