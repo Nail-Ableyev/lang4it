@@ -22,12 +22,13 @@ function App() {
               title: "Instructions",
               type: "wordPicFlip"
           },
-            // {
-            //     id: "colors",
-            //     size: 1,
-            //     title: "Colors",
-            //     type: "colors"
-            // },
+            {
+                id: "colors",
+                size: 1,
+                title: "Colors",
+                tag: "new",
+                type: "colors"
+            },
             // {
             //     id: "layout",
             //     size: 3,
@@ -44,7 +45,6 @@ function App() {
                 id: "loginPass",
                 size: 1,
                 title: "Login & Password",
-                tag: "new",
                 type: "LoginPass"
             }
 
