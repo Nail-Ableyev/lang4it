@@ -13,6 +13,7 @@ function Header(){
                 </Link>
                 <span>|</span>
                 <span>{currentPage}</span>
+                <Link className="dbLink" to={"/dashboard"}>{currentPage!=="dashboard" && "db"}</Link>
             </header>
             <div className="divider"></div>
         </>

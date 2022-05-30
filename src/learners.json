@@ -1,0 +1,21 @@
+{
+    "learners": [
+        {
+            "name": "testUser",
+            "status": "S",
+            "badges": [
+                {"badgeName":"adamant", "amount": 3},
+                {"badgeName":"first_from_end", "amount": 1}
+            ]
+        },
+        {
+            "name": "testUser",
+            "image": "test",
+            "status": "S",
+            "badges": [
+                {"badgeName":"adamant", "amount": 1},
+                {"badgeName":"the_first", "amount": 2}
+            ]
+        }
+    ]
+}

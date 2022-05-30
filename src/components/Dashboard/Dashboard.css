@@ -1,0 +1,87 @@
+.userImageContainer {
+    display: grid;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 1000px;
+}
+
+.userImageContainer img{
+    border-radius: 50%;
+    grid-area: 1/-1;
+}
+
+.userStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 50px;
+   height: 50px;
+   background-color: yellow;
+   border-radius: 1000px;
+   grid-area: 1/-1;
+   font-size: 2em;
+   place-self: end;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.userName {
+    font-size: 1.5em;
+    grid-area: 1/-1;
+    align-self: end;
+}
+
+.forBadges {
+    display: flex;
+}
+
+.badgeContainer {
+    display: grid;
+    position: relative;
+}
+
+.badge {
+    width: 100px;
+    height: 100px;
+    grid-area: 1 / -1;
+}
+
+.multiplier {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 50%;
+    grid-area: 1/-1;
+    place-self: end;
+
+}
+
+.badgeContainer .tooltip {
+    min-width: 100%;
+    max-width: 300px;
+    top: 110%;
+    left:0;
+}
+
+@media only screen and (max-width: 600px){
+    .badgeContainer .tooltip {
+        max-width: 200px;
+    }
+}
+
+.badgeContainer .tooltip::after{
+    top: -5px;
+    right: 50%;
+    margin-top: -5px;
+}
+
+.badgeContainer:hover .tooltip {
+    visibility: visible;
+}

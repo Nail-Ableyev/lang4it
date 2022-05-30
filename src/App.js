@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import {Routes, Route} from "react-router-dom"
 import Flipper from "./components/Flipper";
 import NotFound from "./components/NotFound";
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 function App() {
@@ -61,7 +62,8 @@ function App() {
       <Header/>
         <Routes>
             <Route  path="/" element={<Main mainScreenList={mainScreenList}/>}/>
-                {mainListToRender}
+            {mainListToRender}
+            <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 

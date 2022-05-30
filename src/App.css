@@ -34,6 +34,7 @@ img{
 header {
     display: flex;
     gap: 1ch;
+    position: relative;
     /*justify-content: space-between;*/
     align-items: center;
     padding: 0.5rem;
@@ -61,6 +62,13 @@ header a{
 h1 span {
     margin-left: -8px;
     color: lime;
+}
+
+.dbLink {
+    position: absolute;
+    font-size: 1.5em;
+    padding-top: 5px;
+    right: 10px;
 }
 
 .divider{
