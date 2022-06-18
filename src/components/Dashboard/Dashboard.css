@@ -29,6 +29,7 @@
     padding: 5px;
 }
 
+
 .userName {
     font-size: 1.5em;
     grid-area: 1/-1;
@@ -48,6 +49,7 @@
     width: 100px;
     height: 100px;
     grid-area: 1 / -1;
+    padding: 3px;
 }
 
 .multiplier {
@@ -64,17 +66,19 @@
 }
 
 .badgeContainer .tooltip {
-    min-width: 100%;
+    position: absolute;
+    min-width: 200%;
     max-width: 300px;
     top: 110%;
     left:0;
+    white-space: normal;
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     .badgeContainer .tooltip {
         max-width: 200px;
     }
-}
+} */
 
 .badgeContainer .tooltip::after{
     top: -5px;
@@ -84,4 +88,24 @@
 
 .badgeContainer:hover .tooltip {
     visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px){
+    .userBox {
+        flex-direction: column;
+    }
+
+    .forBadges {
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .badgeContainer .tooltip {
+        visibility: visible;    
+        height: 90%;
+        margin-block: 5px;
+        left: 110%;
+        top:0;
+    }
 }
