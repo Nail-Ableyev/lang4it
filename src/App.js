@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router-dom"
 import Flipper from "./components/Flipper";
 import NotFound from "./components/NotFound";
 import Dashboard from './components/Dashboard/Dashboard';
+import Flip2Match from './components/Flip2Match';
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
             <Route  path="/" element={<Main mainScreenList={mainScreenList}/>}/>
             {mainListToRender}
             <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/flip2match" element={<Flip2Match/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
 

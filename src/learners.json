@@ -1,21 +1,45 @@
 {
     "learners": [
         {
-            "name": "testUser",
+            "name": "Vlad",
             "status": "S",
             "badges": [
-                {"badgeName":"adamant", "amount": 3},
-                {"badgeName":"first_from_end", "amount": 1}
+                {"badgeName":"first_from_end", "amount": 1},
+                {"badgeName":"the_first", "amount": 1}
             ]
         },
         {
-            "name": "testUser",
-            "image": "test",
+            "name": "Sasha",
             "status": "S",
             "badges": [
                 {"badgeName":"adamant", "amount": 1},
-                {"badgeName":"the_first", "amount": 2}
+                {"badgeName":"the_first", "amount": 1}
+            ]
+        },
+        {
+            "name": "Alex",
+            "status": "S",
+            "badges": [
+                {"badgeName":"adamant", "amount": 2}
+
+            ]
+        },
+        {
+            "name": "Kamil",
+            "status": "S",
+            "badges": [
+                {"badgeName":"adamant", "amount": 2}
+
+            ]
+        },
+        {
+            "name": "Artem",
+            "status": "S",
+            "badges": [
+                {"badgeName":"adamant", "amount": 2}
+
             ]
         }
+
     ]
 }

@@ -8,8 +8,25 @@ function ContextProvider({children}){
 
     const [isAllFlipped, setIsAllFlipped] = useState(false)
 
+    const [activeGroup, setActiveGroup] = useState([])
+
+    const [listOfOpened, setListOfOpened] = useState([])
+
+    const [listOfGuessed, setListOfGuessed]=useState([])
+
     return (
-        <Context.Provider value={{currentPage,setCurrentPage,isAllFlipped,setIsAllFlipped}}>
+        <Context.Provider value={{
+            currentPage,
+            setCurrentPage,
+            isAllFlipped,
+            setIsAllFlipped,
+            activeGroup,
+            setActiveGroup,
+            listOfOpened,
+            setListOfOpened,
+            listOfGuessed,
+            setListOfGuessed
+            }}>
             {children}
         </Context.Provider>
     )

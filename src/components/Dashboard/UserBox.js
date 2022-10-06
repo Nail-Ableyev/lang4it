@@ -5,7 +5,7 @@ import Badge from "./Badge"
 function UserBox({user, status, badges}) {
 
     const badgesList = badges.map(item => <Badge type={item["badgeName"]} amount={item["amount"]} />)
-    console.log(badgesList)
+
 
     return(
         <>
