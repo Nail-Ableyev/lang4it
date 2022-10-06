@@ -1,0 +1,14 @@
+{
+    "adamant": {
+        "title": "Adamant",
+        "description": "Given for not submitting the task in time"
+    },
+    "first_from_end": {
+        "title": "The First from th end",
+        "description": "Given for the submitting the last"
+    },
+    "the_first": {
+        "title": "The First",
+        "description": "Given for the submitting the first"
+    }
+}

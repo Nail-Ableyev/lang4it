@@ -2,6 +2,7 @@ import React from "react"
 import masterlist from "../source.json";
 import MyCard from "./MyCard";
 import ActionsPane from "./ActionsPane";
+import LinkToFlip2Match from "./LinkToFlip2Match";
 
 function PictureWordFlipper({target}){
 
@@ -10,7 +11,8 @@ function PictureWordFlipper({target}){
     return (
         <>
         {listOfCards}
-        <ActionsPane/>
+        <ActionsPane />
+        <LinkToFlip2Match />
         </>
     )
 }
